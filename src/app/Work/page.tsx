@@ -26,14 +26,14 @@ const data = [
       id:2,
       title: "Blog_Web",
       desc: " A blog website is an online platform where users can publish and share articles, stories, or opinions on various topics.",
-      img:"/work5.png",
+      img:"/work1.png",
       tags:["React","Next.js","Typescript","Sanity",]
     },
     {
       id:3,
       title: "Landing Page",
       desc: "Building Seamless Digital Experiences. From concept to code, we design, develop, and deliver stunning websites that engage and convert.",
-      img:"/work4.png",
+      img:"/work6.png",
       tags:["React","Next.js","Typescript","Sanity",]
     },
   ]
