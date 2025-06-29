@@ -1,7 +1,9 @@
-
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 const Services = () => {
+  const [zoomed, setZoomed] = useState<number | null>(null);
   return (
     <div className='bg-white py-16'>
         <div className='container mx-auto px-6 lg:px-24 text-center'>
@@ -13,14 +15,20 @@ const Services = () => {
             </div>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-10 px-6 '>
-            <div className='bg-gray-50 rounded-lg shadow-lg p-6'>
+            <motion.div
+              className={`${zoomed === 0 ? 'bg-yellow-100' : 'bg-gray-50'} rounded-lg shadow-lg p-6 cursor-pointer`}
+              onClick={() => setZoomed(zoomed === 0 ? null : 0)}
+              animate={zoomed === 0 ? { scale: 1.3, zIndex: 10 } : { scale: 1, zIndex: 1 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+              style={{ position: 'relative' }}
+            >
             <Image
             src={"/234.png"}
             width={200}
             alt='#'
             height={200}
              className='w-full h-auto object-cover'
-            ></Image>
+            />
             <h3 className='font-bold'>Ecommerce Website</h3>
             <button className="inline-flex items-center bg-yellow-500 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-black mt-4 md:mt-0  transition-colors duration-300">
            <a href={"https://ecommerce-hacatone-qurf.vercel.app/"}>
@@ -37,15 +45,21 @@ const Services = () => {
          
           </button>
 
-            </div>
-            <div className='bg-gray-50 rounded-lg shadow-lg p-6'>
+            </motion.div>
+            <motion.div
+              className={`${zoomed === 1 ? 'bg-yellow-100' : 'bg-gray-50'} rounded-lg shadow-lg p-6 cursor-pointer`}
+              onClick={() => setZoomed(zoomed === 1 ? null : 1)}
+              animate={zoomed === 1 ? { scale: 1.3, zIndex: 10 } : { scale: 1, zIndex: 1 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+              style={{ position: 'relative' }}
+            >
             <Image
             src={"/180806.png"}
             width={200}
             alt='#'
             height={200}
             className='w-full h-auto object-cover'
-            ></Image>
+            />
             <h3 className='font-bold'>Password Generator</h3>
             <p>With streamlit project</p>
             <button className="inline-flex items-center bg-yellow-500 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-black mt-4 md:mt-0  transition-colors duration-300">
@@ -62,16 +76,22 @@ const Services = () => {
           </svg>
          
           </button>
-            </div>
+            </motion.div>
 
-            <div className='bg-gray-50 rounded-lg shadow-lg p-6'>
+            <motion.div
+              className={`${zoomed === 2 ? 'bg-yellow-100' : 'bg-gray-50'} rounded-lg shadow-lg p-6 cursor-pointer`}
+              onClick={() => setZoomed(zoomed === 2 ? null : 2)}
+              animate={zoomed === 2 ? { scale: 1.3, zIndex: 10 } : { scale: 1, zIndex: 1 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+              style={{ position: 'relative' }}
+            >
             <Image
             src={"/gyf.png"}
             width={200}
             alt='#'
             height={200}
             className='w-full h-auto object-cover'
-            ></Image>
+            />
             <h3 className='font-bold'>Unit convertor</h3>
             <p>With streamlit project</p>
             <button className="inline-flex items-center bg-yellow-500 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-black mt-4 md:mt-0  transition-colors duration-300">
@@ -88,7 +108,7 @@ const Services = () => {
           </svg>
          
           </button>
-            </div>
+            </motion.div>
         </div>
     </div>
   )
