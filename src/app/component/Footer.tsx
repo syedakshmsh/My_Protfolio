@@ -9,7 +9,7 @@ export const Footer = () => {
         <div className="px-6 flex justify-center gap-36 md:flex-row flex-col">
         <div className="text-xl md-text-2xl font-bold flex items-center gap-1">
           <span className="text-black">@Code</span>
-          <span className="text-yellow-500">Jiya</span>
+          <span className="text-blue-950">Jiya</span>
           
         </div>
 

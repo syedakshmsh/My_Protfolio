@@ -8,10 +8,14 @@ import { motion } from 'framer-motion'
 
 const Hero = () => {
   return (
-    <div className=" px-6 lg:px-16 flex flex-col md:flex-row justify-between items-center py-32 bg-yellow-50">
+    <div
+      className="px-6 lg:px-16 flex flex-col md:flex-row justify-between items-center py-32"
+      style={{ backgroundImage: "url('/llm.png')", backgroundSize: "cover", backgroundPosition: "center" }}
+    >
       <div className="w-full md:w-1/2 space-y-6">
+
         <motion.h3 
-          className="text-xl md:text-lg lg:text-lg text-yellow-500"
+          className="text-xl md:text-lg lg:text-lg text-blue-950"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -24,7 +28,7 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Hi, I'm a <span className="text-yellow-500">Web Developer</span>
+          Hi, I'm a <span className="text-blue-950">Web Developer</span>
         </motion.h1>
         <motion.p 
           className="text-base md:text-lg text-gray-600"
@@ -45,10 +49,10 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-            <Button className="bg-yellow-500 px-8 py-2 text-black hover:bg-yellow-400 duration-200">
+            <Button className="bg-blue-950 px-8 py-2 text-white hover:bg-blue-600 duration-200">
               Contact Me
             </Button>
-          <button className="inline-flex items-center bg-yellow-500 border-0  focus:outline-none hover:bg-red-700 rounded text-black   transition-colors duration-300">
+          <button className="inline-flex items-center bg-blue-950 border-0  focus:outline-none rounded hover:bg-blue-600 text-white px-8 py-2  transition-colors duration-300">
            <a href={"https://www.linkedin.com/in/hayabyjiya-jiya-0128492ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}>
           Linkedin
           </a>
@@ -77,11 +81,11 @@ const Hero = () => {
         whileTap={{ scale: 0.95 }}
       >
         <Image
-          src="/s.png"
+          src="/work10.png"
           width={500}
           height={500}
           alt="Hero Image"
-          className="w-full h-auto object-cover"
+          className="w-full h-auto object-cover overflow-hidden rounded-md"
         />
       </motion.div>
     </div>

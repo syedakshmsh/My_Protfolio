@@ -12,22 +12,22 @@ const  Contact = () => {
         <p className='mb-4 text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
         <div>
             <div className='space-y-4 text-gray-600 py-2'>
-                <FiMail  className='text-yellow-500 w-6 h-6'/>
-                <span>shjaiya76@gmail.com</span>
+                <FiMail  className='text-blue-950 w-6 h-6'/>
+                <span>shajiyamalik76@gmail.com</span>
 
             </div>
             <div className='space-y-4 text-gray-600 py-2'>
-                <FiMapPin className='text-yellow-500 w-6 h-6' />
+                <FiMapPin className='text-blue-950 w-6 h-6' />
                 <span>pakistan karachi</span>
 
             </div>
             <div className='space-y-4 text-gray-600 py-2'>
-                <FiPhone className='text-yellow-500 w-6 h-6' />
-                <span>3312419388</span>
+                <FiPhone className='w-6 h-6 text-blue-950' />
+                <span>03312419388</span>
 
             </div>
             <div>
-            <button className="inline-flex items-center bg-yellow-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-700 rounded text-white mt-4 md:mt-0  transition-colors duration-300">
+            <button className="inline-flex items-center bg-blue-950 border-0 py-1 px-3 focus:outline-none hover:bg-red-700 rounded text-white mt-4 md:mt-0  transition-colors duration-300">
            <a href={"https://github.com/syedakshmsh"}>
           github
           </a>
@@ -75,7 +75,7 @@ const  Contact = () => {
           placeholder="Your Message"
         ></textarea>
       </div>
-      <Button type="submit" className="w-full bg-yellow-500 text-black py-2 font-semibold shadow-lg rounded-lg">Send</Button>
+      <Button type="submit" className="w-full bg-blue-950 text-white py-2 font-semibold shadow-lg rounded-lg">Send</Button>
     </form>
   
 
