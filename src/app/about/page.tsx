@@ -30,7 +30,7 @@ const About = () => {
                 <div className='flex items-center w-1/2 mb-4'>
                     <FaRegHandshake className='text-blue-950 text-5xl mr-4' />
                <div>
-                <h4 className='text-gray-700 font-semibold'>5 year</h4>
+                <h4 className='text-gray-700 font-semibold'>2 year</h4>
                 <p className='text-gray-700 font-semibold'>Experience</p>
                 </div>
                 </div>

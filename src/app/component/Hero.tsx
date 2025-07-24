@@ -9,10 +9,10 @@ import { motion } from 'framer-motion'
 const Hero = () => {
   return (
     <div
-      className="px-6 lg:px-16 flex flex-col md:flex-row justify-between items-center py-32"
+      className="px-6 lg:px-16 flex flex-col items-center justify-center py-24 min-h-[70vh] text-center"
       style={{ backgroundImage: "url('/llm.png')", backgroundSize: "cover", backgroundPosition: "center" }}
     >
-      <div className="w-full md:w-1/2 space-y-6">
+      <div className="w-full max-w-2xl space-y-6 flex flex-col items-center">
 
         <motion.h3 
           className="text-xl md:text-lg lg:text-lg text-blue-950"
@@ -72,22 +72,7 @@ const Hero = () => {
           
         </motion.div>
       </div>
-      <motion.div 
-        className="w-52 md:w-96 mt-12 md:mt-0"
-        initial={{ opacity: 0, scale: 0.8, x: 50 }}
-        animate={{ opacity: 1, scale: 1, x: 0 }}
-        transition={{ duration: 1, delay: 1, ease: "easeOut" }}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <Image
-          src="/work10.png"
-          width={500}
-          height={500}
-          alt="Hero Image"
-          className="w-full h-auto object-cover overflow-hidden rounded-md"
-        />
-      </motion.div>
+      
     </div>
   )
 }
